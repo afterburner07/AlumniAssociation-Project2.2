@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/holoOrangeDarkBackground"
+    android:padding="@dimen/default_gap"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Editing student"
+        android:textAppearance="@android:style/TextAppearance.Material.Headline" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="20dp"
+        android:onClick="onClickCancelButton"
+        android:text="Cancel" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button"
+        android:layout_alignParentEnd="true"
+        android:onClick="onClickEditButton"
+        android:text="Edit" />
+
+    <android.support.v7.widget.GridLayout
+        android:id="@+id/layoutGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="63dp"
+        android:paddingLeft="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/editText"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="@dimen/default_gap"
+            android:layout_marginTop="@dimen/default_gap"
+            android:text="Student Name: "
+            android:textAppearance="@android:style/TextAppearance.Material.Subhead" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="255dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_column="1"
+            app:layout_row="0" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/editText3"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="@dimen/default_gap"
+            android:layout_marginTop="@dimen/default_gap"
+            android:text="Graduation Year: "
+            android:textAppearance="@android:style/TextAppearance.Material.Subhead"
+            app:layout_column="0"
+            app:layout_row="1" />
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:ems="10"
+            android:inputType="numberSigned"
+            app:layout_column="1"
+            app:layout_row="1" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="@dimen/default_gap"
+            android:layout_marginTop="@dimen/default_gap"
+            android:text="Batch-Year: "
+            android:textAppearance="@android:style/TextAppearance.Material.Subhead"
+            app:layout_column="0"
+            app:layout_row="2" />
+
+        <EditText
+            android:id="@+id/editText5"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView2"
+            android:layout_alignParentEnd="true"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/editText2"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="@dimen/default_gap"
+            android:layout_marginTop="@dimen/default_gap"
+            android:text="Current City: "
+            android:textAppearance="@android:style/TextAppearance.Material.Subhead"
+            app:layout_column="0"
+            app:layout_row="3" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="255dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/editText6"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="@dimen/default_gap"
+            android:layout_marginTop="@dimen/default_gap"
+            android:text="Profession: "
+            android:textAppearance="@android:style/TextAppearance.Material.Subhead"
+            app:layout_column="0"
+            app:layout_row="4" />
+
+        <EditText
+            android:id="@+id/editText6"
+            android:layout_width="255dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/editText7"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="@dimen/default_gap"
+            android:layout_marginTop="@dimen/default_gap"
+            android:text="Roll No: "
+            android:textAppearance="@android:style/TextAppearance.Material.Subhead"
+            app:layout_column="0"
+            app:layout_row="5" />
+
+        <EditText
+            android:id="@+id/editText7"
+            android:layout_width="255dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:ems="10"
+            android:inputType="numberSigned" />
+    </android.support.v7.widget.GridLayout>
+
+</RelativeLayout>
